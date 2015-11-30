@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/floralwhite">
+
+    <!-- Title -->
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    	<TextView
+    	    android:layout_marginTop="20dp"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_alignParentTop="true"
+    	    android:layout_centerHorizontal="true"
+    	    android:gravity="center"
+    	    android:text="@string/item_BatteryInfo"
+    	    style="@style/TextTitle"/>
+      </RelativeLayout>
+      
+      
+	<LinearLayout 
+		    android:layout_width="fill_parent" 
+   		 	android:layout_height="wrap_content" 
+   		 	android:orientation="vertical"
+   		 	android:padding="5dp">
+    <LinearLayout
+         android:layout_width="fill_parent" 
+   		 android:layout_height="wrap_content" 
+         android:layout_marginTop="10dp" 
+         style="@style/textStyle">
+        <TextView
+            android:layout_height="match_parent"
+	        android:layout_width="wrap_content"
+	        android:id="@+id/swver"
+            android:text="@string/battery_status"
+            style="@style/textStyle"/>
+        <TextView
+            android:layout_height="match_parent"
+	        android:layout_width="10dp"
+	        android:text="@string/fenge"
+            style="@style/textStyle" />
+        <TextView
+            android:id="@+id/battery_status_tv"
+            android:layout_height="match_parent"
+	        android:layout_width="wrap_content"
+	        android:layout_marginLeft="10dp"
+            style="@style/textStyle"/>
+    </LinearLayout>  
+    
+  <LinearLayout
+          android:layout_width="fill_parent" 
+   		  android:layout_height="wrap_content" 
+   		  android:layout_marginTop="5dp" >
+ 		<TextView
+             android:layout_height="match_parent"
+	         android:layout_width="wrap_content"
+	         android:id="@+id/ser"
+             android:text="@string/battery_levels"
+             style="@style/textStyle"/>
+ 		<TextView
+            android:layout_height="match_parent"
+	        android:layout_width="10dp"
+	        android:text="@string/fenge"
+            style="@style/textStyle"/>
+         <TextView
+             android:id="@+id/battery_levels_tv"
+             android:layout_height="match_parent"
+	         android:layout_width="wrap_content"
+	         android:layout_marginLeft="10dp"
+             style="@style/textStyle"/>
+     </LinearLayout>
+     
+  <LinearLayout
+       	android:layout_width="fill_parent" 
+ 		android:layout_height="wrap_content" 
+       	android:layout_marginTop="5dp" >
+	    <TextView 
+	         android:layout_height="match_parent"
+	         android:layout_width="wrap_content"
+	         android:id="@+id/Imei1"
+	       	 android:text="@string/battery_range" 
+	         style="@style/textStyle"/>  
+	   <TextView
+            android:layout_height="match_parent"
+	        android:layout_width="10dp"
+	        android:text="@string/fenge"
+            style="@style/textStyle" />
+	    <TextView android:id="@+id/battery_range_tv" 
+	         android:layout_height="match_parent"
+	         android:layout_width="wrap_content"
+	         android:layout_marginLeft="10dp"
+	         style="@style/textStyle"/>  
+    </LinearLayout>
+    
+    <LinearLayout
+         android:layout_width="fill_parent" 
+   		 android:layout_height="wrap_content" 
+   		 android:layout_marginTop="5dp"> 
+	     <TextView 
+	         android:layout_height="match_parent"
+	         android:layout_width="wrap_content"
+	         android:id="@+id/Imei2"
+	         android:text="@string/battery_runstatus" 
+	         style="@style/textStyle"/>  
+	    <TextView
+            android:layout_height="match_parent"
+	        android:layout_width="10dp"
+	        android:text="@string/fenge"
+            style="@style/textStyle" />
+	    <TextView 
+	         android:id="@+id/battery_runstatus_tv" 
+	         android:layout_height="match_parent"
+	         android:layout_width="wrap_content"
+	         android:layout_marginLeft="10dp"
+	         style="@style/textStyle"/>  
+    </LinearLayout>
+     <LinearLayout
+         	android:layout_width="fill_parent" 
+   			android:layout_height="wrap_content" 
+   			android:layout_marginTop="5dp" >
+        <TextView
+            android:layout_height="match_parent"
+	        android:layout_width="wrap_content"
+	        android:id="@+id/btaddr"
+            android:text="@string/battery_voltage"
+            style="@style/textStyle"/>
+        <TextView
+            android:layout_height="match_parent"
+	        android:layout_width="10dp"
+	        android:text="@string/fenge"
+            style="@style/textStyle"/>
+        <TextView
+            android:id="@+id/battery_voltage_tv"
+            android:layout_height="wrap_content" 
+	        android:layout_width="match_parent"
+	        android:layout_marginLeft="10dp"
+	        style="@style/textStyle"/>
+    </LinearLayout>
+    
+     <LinearLayout
+        android:layout_width="fill_parent" 
+   		android:layout_height="wrap_content" 
+   		android:layout_marginTop="5dp">
+        <TextView
+            android:layout_height="match_parent"
+	        android:layout_width="wrap_content"
+	        android:id="@+id/wifi"
+            android:text="@string/battery_temp"
+            style="@style/textStyle"/>
+         <TextView
+            android:layout_height="match_parent"
+	        android:layout_width="10dp"
+	        android:text="@string/fenge"
+            style="@style/textStyle" />
+        <TextView
+            android:id="@+id/battery_temp_tv"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content" 
+	        android:layout_width="match_parent"
+	        style="@style/textStyle"></TextView>
+    </LinearLayout>
+     <LinearLayout 
+         android:layout_width="match_parent"
+   		 android:layout_height="wrap_content"
+   		 android:orientation="horizontal"
+   		 android:layout_marginTop="5dp">
+	     <TextView 
+	         android:text="@string/battery_tech"  
+	         style="@style/textStyle"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content" />  
+	      <TextView
+            android:layout_height="match_parent"
+	        android:layout_width="10dp"
+	        android:text="@string/fenge"
+            style="@style/textStyle" />
+	    <TextView android:id="@+id/battery_tech_tv" 
+	         android:layout_height="wrap_content" 
+	         android:layout_width="wrap_content"
+	         android:layout_marginLeft="10dp"
+	         style="@style/textStyle"/>  
+	 </LinearLayout>
+ 
+ 	<LinearLayout 
+ 	     android:layout_marginTop="5dp"
+         android:layout_width="match_parent"
+   		 android:layout_height="wrap_content"
+   		 android:orientation="horizontal" >
+	     <TextView android:text="@string/battery_time"  
+	        style="@style/textStyle"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" />  
+	     <TextView
+            android:layout_height="match_parent"
+	        android:layout_width="10dp"
+	        android:text="@string/fenge"
+            style="@style/textStyle" />
+	    <TextView android:id="@+id/battery_time_tv" 
+	        android:layout_height="wrap_content" 
+	        android:layout_width="match_parent"
+	        android:layout_marginLeft="10dp"
+	        style="@style/textStyle"/>  
+	  </LinearLayout>
+	</LinearLayout>
+</LinearLayout> 
+
+    

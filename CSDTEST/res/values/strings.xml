@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="action_settings">Settings</string>
+    <string name="app_name">CSD EM</string>
+    <string name="mstringmmi">MMI TEST</string>
+    <string name="mstringmmisingle">            ① SINGLE TEST</string>
+    <string name="mstringmmicontinue">            ② CONTINUE TEST</string>
+    <string name="mstringrf">RF FUNCTION</string>
+    <string name="mstringcardsingletwog">           ① 2G</string>
+    <string name="mstringcardsinglethreeg">           ② 3G</string>
+    <string name="mstringcardsinglefourg">            ③ 4G</string>
+    <string name="mstringgps">            ④ GPS</string>
+    <string name="mstringroot">ROOT INFO</string>
+    <string name="mstringstatistic">STATISTIC INFO</string>
+    <string name="mstringactivation">ACTIVATION TIME</string>
+    <string name="mstringresetpsensor">Reset L/P Sensor Calibration data</string>
+    <string name="row">row</string>
+    <!--RF  -->
+    
+    
+    <!--root  -->
+    <string name="rooted">rooted</string>
+    <string name="pass">pass</string>
+    <string name="adb">ADB:</string>
+    <string name="su">SU:</string>
+    <string name="result">Result:</string>
+    <string name="verifynow">VERIFY NOW</string>
+    
+    <!--sim card single  -->
+    <string name="sim1">sim1</string>
+    <string name="sim2">sim2</string>
+    <string name="rssi">2G RSSI:</string>
+    <string name="rscp">3G RSCP:</string>
+    <string name="rsrp">4G RSRP:</string>
+    <string name="dbm">dbm</string>
+    <string name="asu">Aus</string>
+    <string name="nosim">(NO_SIM)</string>
+    <string name="colon">:</string>
+    <string name="nosingle"> : NO_SINGLE</string>
+    
+    <string-array name="singlelevel">
+        <item >GREAT!</item>
+        <item >GOOD!</item>
+        <item >MODERATE!</item>
+        <item >POOR!</item>
+        <item >UNKNOWN!</item>
+    </string-array>
+    
+    <!-- Activited Time -->
+    <string name="activatedtitle">Activated Time</string>
+    <string name="activatedreset">RESET</string>
+    <string name="activatedexit">EXIT</string>
+    <string name="activatedinputpassword">Please Input Password to Reset!</string>
+    <string name="ok">OK</string>
+    <string name="no">NO</string>
+    <string name="activatedresetsuccess">Clear success, please re-enter the test item!</string>
+    
+    <!--Reset PSensor-->
+    <string name="resetsensordata">Reset Sensor Data </string>
+    <string name="resetwritemagic">Write Magic number </string>
+    <string name="resetdocalibration">Set Sensor Calibration </string>
+    <string name="success">Success!</string>
+    <string name="fail">Fail!</string>
+    <string name="resetpsensornote">Put phone on a horizontal plane.Donnot cover L/P-Sensor</string>
+</resources>
+

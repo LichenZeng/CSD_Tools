@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- chb modify for VFOZBENQ-127 20150917 -->
+    <string-array name="testitems">
+        <item >@string/item_VersionInfo</item>
+        <item >@string/item_BatteryInfo</item>
+        <item >@string/item_TouchPanel</item>
+        <item >@string/item_LCD</item>
+        <item >@string/item_lcdbacklight</item>
+        <item >@string/item_ledkeypad</item>
+        <item >@string/item_key</item>
+        <item >@string/item_motor</item>
+		<item >@string/item_Flash</item>
+        <item >@string/item_BackCamera</item>
+        <item >@string/item_FrontCamera</item>
+        <item >@string/item_Mic</item>
+        <item >@string/item_Ringtone</item>
+        <item >@string/item_Loudspeaker</item>
+        <item >@string/item_Headset</item>
+        <item >@string/item_FM</item>
+        <item >@string/item_GssorGyroCal</item>
+        <item >@string/item_GSersor</item>
+        <item >@string/item_MSersor</item>
+        <item >@string/item_LSersor</item>
+        <item >@string/item_PSersor</item>
+        <item >@string/item_sim</item>
+        <item >@string/item_memorycard</item>
+	<item >@string/item_wifi</item>
+        <item >@string/item_bt</item>
+        <item >@string/item_gps</item>
+           
+    </string-array>
+    <!-- 测试类名 -->
+    <string-array name="testClassNames">
+        <item >com.mlt.csdfactorytest.item.VersionAndBatteryTest</item>
+        <item >com.mlt.csdfactorytest.item.BatteryTest</item>
+        <item >com.mlt.csdfactorytest.item.TouchPanel</item>
+        <item >com.mlt.csdfactorytest.item.LCD</item>
+        <item >com.mlt.csdfactorytest.item.LcdBackLight1</item>
+        <item >com.mlt.csdfactorytest.item.LedKeypad</item>
+        <item >com.mlt.csdfactorytest.item.KeyTest</item>
+        <item >com.mlt.csdfactorytest.item.MotorTest</item>
+		<item >com.mlt.csdfactorytest.item.FlashLihgtTest</item>
+        <item >com.mlt.csdfactorytest.item.CameraBackTest</item>
+        <item >com.mlt.csdfactorytest.item.CameraFrontTest</item>
+        <item >com.mlt.csdfactorytest.item.AudioMicLoopTest</item>
+        <item >com.mlt.csdfactorytest.item.AudioRingtoneTest</item>
+        <item >com.mlt.csdfactorytest.item.AudioLoudspeakerTest</item>
+        <item >com.mlt.csdfactorytest.item.AudioHeadsetTest</item>
+        <item >com.mediatek.fmradio.FmRadioActivity</item>
+        <item >com.mlt.csdfactorytest.item.GsensorGyroscopeCalibration</item>
+        <item >com.mlt.csdfactorytest.item.SensorGTest</item>
+        <item >com.mlt.csdfactorytest.item.SersorMTest</item>
+        <item >com.mlt.csdfactorytest.item.SersorLTest</item>
+        <item >com.mlt.csdfactorytest.item.SersorPTest</item>
+        <item >com.mlt.csdfactorytest.item.SimCard</item>
+        <item >com.mlt.csdfactorytest.item.MemoryCard</item>
+		<!-- pss add for VFOZBENQ-179 20150929 start -->
+		<!--Before <item >com.mlt.csdfactorytest.item.Wifi</item>-->
+		<item >com.mlt.csdfactorytest.item.WifiTest</item>
+		<!-- pss add for VFOZBENQ-179 20150929 end -->
+        <item >com.mlt.csdfactorytest.item.Bt</item>
+        <item >com.mlt.csdfactorytest.item.Gps</item>
+    </string-array>
+
+</resources>

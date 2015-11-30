@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/floralwhite">
+	
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:paddingBottom="4dp"
+            android:text="@string/mtvsimcardtitle"
+            style="@style/TextTitle"/>
+    </RelativeLayout>
+     
+	<RelativeLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="150dp"
+	    android:layout_centerInParent="true"
+	    android:orientation="vertical"
+	    android:baselineAligned="false"
+	    >
+        <RelativeLayout
+            android:id="@+id/mrelsim2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_centerInParent="true"
+            android:padding="2dp" >
+
+            <TextView
+                android:id="@+id/mtvsim2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/textStyle_20"
+				android:padding="10dp"
+                android:text="@string/mtvsimcardsim2name" />
+            <TextView
+                android:layout_toRightOf="@+id/mtvsim2"
+                android:id="@+id/mtvsim2card"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/mtvsim2"
+                android:padding="10dp"           
+                style="@style/textStyle"/>     
+               
+        </RelativeLayout>
+        <RelativeLayout
+           android:id="@+id/mrelsim1"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           
+           android:layout_centerHorizontal="true"
+           android:layout_alignParentTop="true"
+           android:padding="2dp" >
+
+            <TextView
+                android:id="@+id/mtvsim1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/textStyle_20"
+                android:text="@string/mtvsimcardsim1name"
+                android:padding="10dp"/>
+
+            <TextView
+                android:id="@+id/mtvsim1card"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                style="@style/textStyle"
+                android:layout_toRightOf="@+id/mtvsim1"
+                android:layout_alignBottom="@+id/mtvsim1"
+                android:padding="10dp"/>
+            
+        </RelativeLayout>
+        
+    </RelativeLayout>
+   
+</RelativeLayout>

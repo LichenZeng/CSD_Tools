@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <TextView 
+        android:id="@+id/resetpsensorcontent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_centerInParent="true"
+        android:text="@string/resetpsensornote"
+        android:textSize="18sp"/>
+    <LinearLayout 
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button 
+            android:id="@+id/resetpsensor"
+            android:layout_margin="5dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onClickResetPSensor"
+            android:text="@string/activatedreset"
+            android:background="@drawable/selector_button"/>
+        <Button 
+            android:id="@+id/resetpsensorexit"
+            android:layout_margin="5dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onClickResetPSensor"
+            android:text="@string/activatedexit"
+            android:background="@drawable/selector_button"/>
+    </LinearLayout>
+</RelativeLayout>

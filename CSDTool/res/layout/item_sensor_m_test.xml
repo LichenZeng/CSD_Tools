@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/floralwhite" >
+    
+       <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    	<TextView
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_alignParentTop="true"
+    	    android:layout_marginTop="10dp"
+    	    android:layout_centerHorizontal="true"
+    	    android:gravity="center"
+    	    android:text="@string/item_MSersor"
+    	    style="@style/TextTitle"/>
+      </RelativeLayout>
+    
+       <View 
+      	 android:layout_marginTop="40dp"
+         android:layout_height="6dip"
+         android:layout_width="fill_parent" 
+  		 android:background="@color/green" />  
+  		 
+    <!-- 磁场传感器 -->
+    <RelativeLayout 
+        style="@style/textStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/rl_mssor">
+        <TextView 
+            android:text="@string/tv_mssor"
+            android:id="@+id/tv_mssor_name"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            style="@style/textTitle_m"
+            android:layout_height="wrap_content"/>
+        <TextView 
+            android:id="@+id/tv_mssor"
+            android:layout_alignTop="@id/tv_mssor_name"
+            android:layout_toRightOf="@id/tv_mssor_name"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="55dp"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:textColor="@android:color/black"
+            android:layout_height="wrap_content" />
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_mssor_name"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/tv_gsensor_hint"
+            style="@style/textTip"
+            android:text="@string/tv_sensor_is_change" />
+    </RelativeLayout>
+    
+         
+	
+</LinearLayout>

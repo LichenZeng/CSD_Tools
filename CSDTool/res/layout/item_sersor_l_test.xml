@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/floralwhite"
+    android:id="@+id/lsersor_blackground" >
+    
+       <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    	<TextView
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_alignParentTop="true"
+    	    android:layout_marginTop="10dp"
+    	    android:layout_centerHorizontal="true"
+    	    android:gravity="center"
+    	    android:text="@string/item_LSersor"
+    	    style="@style/TextTitle"/>
+      </RelativeLayout>
+ 	<View 
+      	 android:layout_marginTop="40dp"
+         android:layout_height="6dip"
+         android:layout_width="fill_parent" 
+  		 android:background="@color/green" />  
+    <!-- 光线传感器 -->
+    <RelativeLayout 
+        style="@style/textStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/rl_lssor">
+       <TextView 
+            android:text="@string/tv_lssor"
+            android:id="@+id/tv_lssor_name"
+            style="@style/textTitle_m"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView 
+            android:text="@string/tv_lssor1"
+            android:id="@+id/tv_lssor_name1"
+            android:layout_below="@+id/tv_lssor_name"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="3dp"
+            style="@style/textTip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/textStyle"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/tv_lssor_name"
+            android:id="@+id/tv_lssor_value"/>
+     <!--    <ToggleButton 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lssor_status"
+            android:textOn="是"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:textOff="否"/>
+             -->
+    </RelativeLayout>
+       
+</LinearLayout>

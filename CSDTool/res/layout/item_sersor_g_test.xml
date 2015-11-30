@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/floralwhite" >
+    
+       <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    	<TextView
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_alignParentTop="true"
+    	    android:layout_marginTop="10dp"
+    	    android:layout_centerHorizontal="true"
+    	    android:gravity="center"
+    	    android:text="@string/item_GSersor"
+    	    style="@style/TextTitle"/>
+      </RelativeLayout>
+        <View 
+      	 android:layout_marginTop="40dp"
+         android:layout_height="6dip"
+         android:layout_width="fill_parent" 
+  		 android:background="@color/green" />  
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        style="@style/textStyle"
+        android:id="@+id/rl_gsensor">
+    	<TextView 
+            android:text="@string/tv_gssor"
+            android:id="@+id/tv_gssor_name"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            style="@style/textTitle_m"
+            android:layout_height="wrap_content"/>
+        <TextView 
+            android:layout_below="@+id/tv_gssor_name"
+            android:id="@+id/tv_gssor_name1"
+            android:text="@string/tv_gssor1"
+            style="@style/textTip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/tv_gssor"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/tv_gssor_name1"/>
+        <com.mlt.csdfactorytest.customview.GSensorOriView 
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/tv_gssor_name1"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/gssor_ori"/>
+    </RelativeLayout>
+    
+        
+  		 
+   
+    
+</LinearLayout>

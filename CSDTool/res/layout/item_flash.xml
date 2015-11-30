@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/floralwhite"
+    android:orientation="vertical" >
+	
+    
+	 <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+	
+	<!-- pss modify  for VFOZBENQ-211 20150917 start -->
+        <!-- before <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:paddingBottom="4dp"
+            android:text="@string/mtvcardtile"
+            style="@style/TextTitle"/>-->
+	    <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:paddingBottom="4dp"
+            android:text="@string/mtvmemorycardtitle"
+            style="@style/TextTitle"/>
+	<!-- pss modify  for VFOZBENQ-211 20150917 end -->
+    </RelativeLayout>
+	
+	 <View
+        android:layout_width="fill_parent"
+        android:layout_height="6dip"
+        android:layout_marginTop="10dp"
+        android:background="@color/green" />
+	
+   <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+      <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:padding="2dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp">
+            <TextView
+                android:id="@+id/mtvsd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/textStyle"
+                android:text="@string/mtvmemorycardSDname" />
+            <TextView
+                android:layout_marginTop="20dp"
+                android:id="@+id/mtvsdstate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                style="@style/textStyle" 
+                />
+            <TextView
+                android:id="@+id/mtvsdtotalsize"
+                android:layout_margin="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/textStyle"/>
+            <TextView
+                android:id="@+id/mtvsdusedsize"
+                android:layout_margin="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/textStyle" 
+                />
+            <TextView
+                android:id="@+id/mtvsdavilablesize"
+                android:layout_margin="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/textStyle" 
+                />
+        </LinearLayout>
+      
+      <!--<View
+        android:layout_width="fill_parent"
+        android:layout_height="6dip"
+        android:layout_marginTop="10dp"
+        android:background="@color/green" />
+      
+       <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:padding="2dp">
+
+            <TextView
+                android:id="@+id/mtvsd2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/textStyle"
+                android:text="@string/mtvmemorycardSD2name" />
+            <TextView
+                android:layout_marginTop="20dp"
+                android:id="@+id/mtvsd2state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                style="@style/textStyle" 
+                />
+            <TextView
+                android:id="@+id/mtvsd2totalsize"
+                android:layout_margin="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/textStyle"/>
+            <TextView
+                android:id="@+id/mtvsd2usedsize"
+                android:layout_margin="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/textStyle" 
+                />
+            <TextView
+                android:id="@+id/mtvsd2avilablesize"
+                android:layout_margin="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/textStyle" 
+                />
+        </LinearLayout>-->
+       
+       <!--<View
+        android:layout_width="fill_parent"
+        android:layout_height="6dip"
+        android:layout_marginTop="10dp"
+        android:background="@color/green" />
+       
+       <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp">
+
+            <TextView
+                android:id="@+id/mtvotg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/textStyle"
+                android:text="@string/mtvmemorycardotgname" />
+            <TextView
+                android:layout_marginTop="20dp"
+                android:id="@+id/mtvotgstate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                style="@style/textStyle" 
+                />
+            <TextView
+                android:id="@+id/mtvotgtotalsize"
+                android:layout_margin="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/textStyle"/>
+            <TextView
+                android:id="@+id/mtvotgusedsize"
+                android:layout_margin="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/textStyle" 
+                />
+            <TextView
+                android:id="@+id/mtvotgavilablesize"
+                android:layout_margin="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/textStyle" 
+                />
+        </LinearLayout> -->
+        
+    </LinearLayout>
+
+    
+
+</LinearLayout>

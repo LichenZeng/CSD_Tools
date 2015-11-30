@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mlt.csdtool"
+    android:sharedUserId="android.uid.system"
+    android:versionCode="2"
+    android:versionName="1.1" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CONNECTIVITY_INTERNAL" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MANAGE_NETWORK_POLICY" />
+    <uses-permission android:name="android.permission.NET_ADMIN" />
+    <uses-permission android:name="android.permission.READ_NETWORK_USAGE_HISTORY" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_MEDIA_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.mlt.csdtool.TestAccessActivity"
+            android:label="@string/app_name" 
+            android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="com.mlt.csdem.action.TEST_CSD" />
+
+                 <category android:name="android.intent.category.DEFAULT" /> 
+                <!-- <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" /> -->
+            </intent-filter>
+        </activity>
+        <activity android:name="com.mlt.csdtool.RootedActivity" >
+        </activity>
+        <activity
+            android:name="com.mlt.csdtool.SimCardSingleAvtivity"
+            android:process="com.android.phone" >
+        </activity>
+        <activity
+            android:name="com.mlt.csdtool.ActivitiedTimeActivity"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        
+        <receiver android:name="com.mlt.csdtool.BootCompleteReceiver">
+            <intent-filter >
+                <action android:name="android.intent.action.CSDTEST_COUNTTIMESERVICE"/>
+            </intent-filter>
+	    
+	    <!--pss add for VFOZBENQ-140 20150922 start-->
+            <intent-filter >
+                <action android:name="android.intent.action.CSDTEST_COUNTTIMESERVICE_MODEM"/>
+            </intent-filter>
+            
+            <intent-filter>    
+                <action android:name="android.intent.action.CSDTEST_COUNTTIMESERVICE_NO_NETWORK"/>    
+            </intent-filter> 
+            
+            <intent-filter>    
+                <action android:name="android.intent.action.ACTION_SHUTDOWN"/>    
+            </intent-filter> 
+            
+            <!--pss add for VFOZBENQ-15 20150928 start-->
+            <intent-filter>    
+                <action android:name="android.intent.action.CSDTEST_COUNTTIMESERVICE_SET_TIME"/>    
+            </intent-filter> 
+            
+            <intent-filter>    
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>    
+              
+            </intent-filter> 
+	    <!--pss add for VFOZBENQ-15 20150928 end-->
+	     <!--pss add for VFOZBENQ-140 20150922 end-->
+	     
+        </receiver>
+        
+        <service android:name="com.mlt.csdtool.CountTimeService">
+            <intent-filter >
+                <action android:name="com.mlt.csdtool.service" />  
+                <category android:name="android.intent.category.DEFAULT"/> 
+            </intent-filter>
+        </service>
+    </application>
+    
+    
+
+</manifest>

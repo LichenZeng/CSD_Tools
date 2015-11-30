@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/floralwhite"
+    android:orientation="vertical" >
+
+
+        <TextView
+            android:id="@+id/mtvwifissid"
+            style="@style/textStyle"
+            android:textColor="#006400"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			android:layout_margin="3dp"
+            />
+
+        <TextView
+            android:id="@+id/mtvwifistrength"
+            style="@style/textStyle"
+            android:textColor="#EE2C2C"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			android:layout_marginLeft="50dp"
+			android:layout_margin="3dp"
+            />
+
+        
+        <TextView
+            android:id="@+id/mtvwifirate"
+            style="@style/textStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			android:layout_marginLeft="50dp"
+			android:layout_margin="3dp"
+            />
+
+        <TextView
+            android:id="@+id/mtvwifimac"
+            style="@style/textStyle"
+			android:layout_marginLeft="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			android:layout_margin="3dp"
+            />
+
+        <TextView
+            android:id="@+id/mtvwifisecurity"
+            style="@style/textStyle"
+			android:layout_marginLeft="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			android:layout_margin="3dp"
+            />
+
+</LinearLayout>
